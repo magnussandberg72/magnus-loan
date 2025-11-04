@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swish till KristiKropp 🙏🏼</title>
+  <style>
+    :root {
+      --bg-dark: #0b1220;
+      --text: #f2f5ff;
+      --accent: #7aa2ff;
+      --btn-bg: #7aa2ff;
+      --btn-text: #06122a;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      line-height: 1.7;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      overflow-x: hidden;
+      text-align: center;
+    }
+
+    /* Titel */
+    .title {
+      margin-top: 30px;
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    /* Hero-bild + fade */
+    .hero {
+      width: 100%;
+      position: relative;
+      background-color: #0b1220;
+      margin-top: 10px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .fade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 180px;
+      background: linear-gradient(to bottom, rgba(11,18,32,0) 0%, #0b1220 100%);
+    }
+
+    /* Bibel-knapp */
+    .bible-btn {
+      display: inline-block;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      margin: 40px auto 30px;
+      transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+      box-shadow: 0 4px 15px rgba(122,162,255,0.25);
+    }
+
+    .bible-btn:hover {
+      background: #9bb8ff;
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(122,162,255,0.4);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .quote {
+      font-style: italic;
+      margin: 30px 0;
+      color: #b7c3ea;
+    }
+
+    .main-btn {
+      display: inline-block;
+      background: var(--btn-bg);
+      color: var(--btn-text);
+      padding: 14px 28px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 18px;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .main-btn:hover {
+      background: #9bb8ff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 40px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      background: #0a1120;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: 500;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Titel -->
+  <h1 class="title">Swish till KristiKropp 🙏🏼</h1>
+
+  <!-- Bild med fade -->
+  <div class="hero">
+    <img src="public/20250802_diamond.jpg" alt="vänlighet illustration" />
+    <div class="fade"></div>
+  </div>
+<br><br>
+  <!-- Bibel-knapp -->
+  <div>
+    <a href="https://app.bible.com/FCPc/ilyCM8GCtC" class="bible-btn" target="_blank" rel="noopener">
+      Bibeln på nätet 🙏🏼
+    </a>
+  </div>
+
+  <!-- Huvudinnehåll -->
+  <main>
+    <p>I en tid där många har det svårt, vill vi stå tillsammans.</p>
+    <p>Här samlas bröder och systrar som behöver hjälp till mat, värme och vardag.<br>
+       Och här möts de som kan — och vill — ge lite kärlek tillbaka.</p>
+    <p>Med en enkel Swish kan du vara skillnaden mellan oro och ro.</p>
+
+    <p class="quote">✝️ “Den som ger åt den fattige, lånar åt Herren, och Han ska löna honom för det han gjort.”<br>
+    (Ordspråksboken 19:17)</p>
+
+    <p>♥️ Tack för att du delar, bryr dig och visar kärlek i handling.</p>
+
+    <a href="donate.html" class="main-btn">till swish-hjälp sidan</a>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <a href="about.html">Om syster Diamond</a> |
+    <a href="contact.html">Kontakt</a>
+  </footer>
+
+</body>
+</html>
