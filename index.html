@@ -18,28 +18,25 @@
       font-family: "Inter", system-ui, sans-serif;
       background: var(--bg-dark);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.8;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
-      overflow-x: hidden;
       text-align: center;
+      overflow-x: hidden;
     }
 
-    /* Titel */
     .title {
-      margin-top: 30px;
-      font-size: clamp(26px, 4vw, 38px);
+      margin-top: 40px;
+      font-size: clamp(28px, 5vw, 40px);
       font-weight: 600;
-      color: var(--text);
+      letter-spacing: 0.5px;
     }
 
-    /* Hero-bild + fade */
     .hero {
-      width: 100%;
       position: relative;
-      background-color: #0b1220;
-      margin-top: 10px;
+      width: 100%;
+      margin-top: 20px;
     }
 
     .hero img {
@@ -57,8 +54,7 @@
       background: linear-gradient(to bottom, rgba(11,18,32,0) 0%, #0b1220 100%);
     }
 
-    /* Bibel-knapp */
-    .bible-btn {
+    .bible-btn, .main-btn {
       display: inline-block;
       background: var(--btn-bg);
       color: var(--btn-text);
@@ -67,47 +63,33 @@
       font-weight: 700;
       font-size: 16px;
       text-decoration: none;
-      margin: 40px auto 30px;
+      margin: 35px auto;
       transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
       box-shadow: 0 4px 15px rgba(122,162,255,0.25);
     }
 
-    .bible-btn:hover {
+    .bible-btn:hover, .main-btn:hover {
       background: #9bb8ff;
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(122,162,255,0.4);
     }
 
     main {
-      max-width: 760px;
+      max-width: 750px;
       margin: 0 auto;
-      padding: 0 20px 80px;
-      text-align: center;
-      margin-top: 10px;
+      padding: 0 24px 80px;
+    }
+
+    main p {
+      margin-bottom: 18px;
+      font-size: 17px;
     }
 
     .quote {
       font-style: italic;
-      margin: 30px 0;
       color: #b7c3ea;
-    }
-
-    .main-btn {
-      display: inline-block;
-      background: var(--btn-bg);
-      color: var(--btn-text);
-      padding: 14px 28px;
-      border-radius: 14px;
-      font-weight: 700;
+      margin: 35px 0;
       font-size: 16px;
-      text-decoration: none;
-      margin-top: 18px;
-      transition: background 0.3s, transform 0.2s;
-    }
-
-    .main-btn:hover {
-      background: #9bb8ff;
-      transform: scale(1.05);
     }
 
     footer {
@@ -131,57 +113,66 @@
 </head>
 <body>
 
-  <!-- Titel -->
   <h1 class="title">Swisha en peng</h1>
 
-  <!-- Bild med fade -->
   <div class="hero">
-    <img src="public/vansinne.jpg" alt="lånet, illustration" />
+    <img src="public/vansinne.jpg" alt="Lånet – illustration" />
     <div class="fade"></div>
   </div>
-<br><br>
-  <!-- Bibel-knapp -->
-  <div>
-    <a href="https://app.bible.com/FCPc/ilyCM8GCtC" class="bible-btn" target="_blank" rel="noopener">
-      Bibeln på nätet 🙏🏼
-    </a>
-  </div>
 
-  <!-- Huvudinnehåll -->
+  <a href="https://app.bible.com/FCPc/ilyCM8GCtC" class="bible-btn" target="_blank" rel="noopener">
+    📖 Bibeln på nätet
+  </a>
+
   <main>
-    <p>Denna sajt, har jag byggt för att kunna få er hjälp,<br>
-       till att betala av ett lån, som jag blev lurat på av ett företag.<br>
-      
-       lånet är på 35.000kr, och har en väldigt hög ränta, 54%.<br>
-       pga den räntan, betalar jag 1000kr i ränta, varje månad,<br>
-       och amorterar 600kr.<br>
-       jag har kontaktat banker som nordea och handelsbanken,<br>
-       men fått avslag på lån att kunna betala detta lån, och få<br>
-       lägre ränta. de avslog pga svag ekonomi.<br>
-       jag sköter min ekonomi och har inga betalnings anmärkningar.<br>
-      
-       så jag vänder mig till er, som gillar mitt arbete med sajterna,<br>
-       och det jag gör för kyrkor och församlingar.<br>
-       </p><br>
-    
-       <p>din gåva är viktig för mig magnus, att avbetala lånet med.<br>
-       <p>kan du hjälpa mig avbetala litegrann, så vore jag glad ♥️🙏🏼<br>
-         <br>
-       <p>märk swishningen med "35, lånet", så vet jag att ni swisha från sajten,<br>
-          jag är väldigt tacksam för all er hjälp 🙏🏼♥️✝️</p><br>
+    <p>
+      Denna sida har jag byggt för att kunna be om er hjälp –<br>
+      att betala av ett lån som jag blev lurad på av ett företag.
+    </p>
 
-    <p class="quote">✝️ “Den som ger åt den fattige, lånar åt Herren, och Han ska löna honom för det han gjort.”<br>
-    (Ordspråksboken 19:17)</p>
+    <p>
+      Lånet är på <strong>35 000 kr</strong> och har en ränta på <strong>54 %</strong>.<br>
+      På grund av det betalar jag cirka 1 000 kr i ränta varje månad<br>
+      och amorterar 600 kr.
+    </p>
 
-    <p>Tack för att du delar, bryr dig och visar kärlek i handling.</p>
+    <p>
+      Jag har kontaktat banker som Nordea och Handelsbanken,<br>
+      men fått avslag eftersom min ekonomi bedöms som svag.<br>
+      Jag sköter dock min ekonomi och har inga betalningsanmärkningar.
+    </p>
 
-    <a href="donate.html" class="main-btn">till swish-hjälp sidan</a>
+    <p>
+      Därför vänder jag mig till er som gillar mitt arbete med sajterna –<br>
+      och det jag gör för kyrkor och församlingar.
+    </p>
+
+    <p>
+      Din gåva hjälper mig, Magnus, att steg för steg betala av lånet.<br>
+      Kan du bidra med en liten del, blir jag väldigt tacksam ♥️🙏🏼
+    </p>
+
+    <p>
+      Märk swishningen med <em>“35, lånet”</em> så vet jag att den kommer via denna sida.<br>
+      Jag är djupt tacksam för all hjälp och förbön. ✝️
+    </p>
+
+    <p class="quote">
+      “Den som ger åt den fattige, lånar åt Herren,<br>
+      och Han ska löna honom för det han gjort.”<br>
+      <small>– Ordspråksboken 19:17</small>
+    </p>
+
+    <p>
+      Tack för att du delar, bryr dig och visar kärlek i handling.
+    </p>
+
+    <a href="donate.html" class="main-btn">Till Swish-hjälpsidan</a>
   </main>
 
-  <!-- Footer -->
   <footer>
-    <a href="about.html">Om mig</a> |
-    <a href="#">Hem</a>
+    <a href="#">Hem</a> |
+    <a href="about.html">Om mig</a>
   </footer>
 
 </body>
